@@ -22,13 +22,19 @@ const config = {
                 use: "babel-loader",
                 exclude: /node_modules/,
             },
+            {
+                test: /\.m?(sa|sc|c)ss$/i,
+                use: ['css-loader']
+            }
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.html",
+            template: "./src/template.html",
             filename: "index.html",
+            title: 'react router example',
             inject: "body",
+            chunks: ['index'],
         }),
     ],
 };

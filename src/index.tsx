@@ -1,5 +1,12 @@
 import React from "react";
-import { render } from "react-dom";
-import App from "./App";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from './modal/app';
 
-render(<App />, document.body);
+const reactRoot = document.querySelector("#react_root");
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
+    reactRoot
+);
