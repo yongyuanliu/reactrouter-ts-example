@@ -24,7 +24,7 @@ const config = {
             },
             {
                 test: /\.m?(sa|sc|c)ss$/i,
-                use: ['css-loader']
+                use: ["style-loader", 'css-loader']
             }
         ],
     },

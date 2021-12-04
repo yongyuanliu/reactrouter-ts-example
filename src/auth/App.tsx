@@ -3,7 +3,7 @@ import { Outlet, useNavigate, Link, Routes, Route, useLocation, Navigate } from 
 import { useAuth } from "./auth/auth-context";
 import AuthProvider from "./auth/auth-provider";
 import { AuthStatus, RequireAuth } from "./auth/auth-status";
-
+import "./app.css";
 export default function App() {
     return (
         <AuthProvider>
