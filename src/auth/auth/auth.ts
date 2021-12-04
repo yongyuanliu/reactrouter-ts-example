@@ -1,3 +1,6 @@
+/**
+ * isAuthenticated: true 表示登录成功 || false 表示失败
+ */
 export const fakeAuthProvider = {
     isAuthenticated: false,
     sigin(callback: VoidFunction) {
