@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import App from './custom-query-parsing/App';
+import App from './lazy/App';
 
 const reactRoot = document.querySelector("#react_root");
 ReactDOM.render(
