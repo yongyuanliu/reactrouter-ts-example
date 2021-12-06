@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@reach/dialog": "^0.16.2",
     "@reach/visually-hidden": "^0.16.0",
     "jsurl": "^0.1.5",
     "react": "^17.0.2",
