@@ -19,8 +19,14 @@ const config = {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: "babel-loader",
                 exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["@babel/preset-env"],
+                        plugins: ["@babel/plugin-transform-runtime"]
+                    }
+                }
             },
             {
                 test: /\.m?(sa|sc|c)ss$/i,
